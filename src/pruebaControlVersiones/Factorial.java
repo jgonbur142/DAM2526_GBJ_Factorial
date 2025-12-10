@@ -22,8 +22,22 @@ public class Factorial {
 	static int pedirNumero(int num) {
 		Scanner sc = new Scanner(System.in);
 
-        System.out.print("Introduce un número entero mayor o igual que 0: ");
-        return sc.nextInt();
+		boolean valido;
+
+	    do {
+	        System.out.print("Introduce un número entero mayor o igual que 0: ");
+	        if (sc.hasNextInt()) {
+	            num = sc.nextInt();
+	            valido = true;
+	        } else {
+	            System.out.println("Entrada no válida. Introduce un entero.");
+	            sc.next();
+	            valido = false;
+	            num = -1;
+	        }
+	    } while (!valido);
+
+	    return num;
 	}
 
 }
