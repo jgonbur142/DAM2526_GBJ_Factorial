@@ -39,5 +39,21 @@ public class Factorial {
 
 	    return num;
 	}
+	
+	private static long factorialBucle(int num) {
+		int aux=0;
+		int falseNum = num;
+		
+		if (num==0 || num==1) {
+			return 1;
+		
+		}else {
+			while (falseNum!=0 || falseNum!=1)
+				aux+=1;
+				falseNum--;
+		}
+		
+		return num*=aux;
+	}
 
 }
