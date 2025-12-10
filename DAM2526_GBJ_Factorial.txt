@@ -1,0 +1,92 @@
+    1  history -w
+    2  mkdir .gitignore
+    3  nano .gitignore
+    4  nano .gitignore
+    5  git remote -v
+    6  git remote add origin git@github.com:jgonbur142/DAM2526_GBJ_Factorial.git
+    7  git remote -v
+    8  git commit -m "Versión inicial que pide número y realiza comprobación"
+    9  git push
+   10  git push --set-upstream origin main
+   11  git push
+   12  git push --set-upstream origin main
+   13  git remote -v
+   14  git add .
+   15  git commit -m "Versión inicial que pide número y realiza comprobación"
+   16  git push
+   17  git push --set-upstream origin main
+   18  git status
+   19  git add .
+   20  git commit -m "Segunda versión que añade pedirNumero y optimiza para el flujo de entrada"
+   21  git push
+   22  git status
+   23  git add .
+   24  git commit -m "Tercera versión que añade println RESULTADO en el main de la clase Factorial"
+   25  git push 
+   26  git switch -c factorial_recursivo
+   27  git status
+   28  git add .
+   29  git commit -m "Versión F1 local que añade función recursiva en la clase Factorial"
+   30  git status
+   31  git add .
+   32  git status
+   33  git commit -m "Versión F2 local que modifica el println RESULTADO al final del main de la clase Factorial"
+   34  git status
+   35  git add .
+   36  git status
+   37  git commit -m "Versión F3 que añade documentación JavaDoc encima de la función factorialRec"
+   38  git log --oneline --graph --all
+   39  git log --graph --all
+   40  git switch main
+   41  clear
+   42  git status
+   43  git add .
+   44  git commit -m "Versión D con modificación en pedirNumero"
+   45  git push
+   46  git status
+   47  git add .
+   48  git commit -m "Versión E que añade la función factorialBucle"
+   49  git push
+   50  git status
+   51  git add .
+   52  git commit -m "Versión F que modifica println RESULTADO en el main de la clase Factorial"
+   53  git push 
+   54  git log --oneline --graph --all
+   55  git log --graph --all
+   56  git log --graph --all
+   57  git branch
+   58  git switch factorial_recursivo 
+   59  git rebase main 
+   60  git rebase --continue
+   61  git log --oneline
+   62  git status
+   63  git add .
+   64  git rebase --continue
+   65  git status
+   66  git log --oneline
+   67  clear
+   68  git log --oneline --graph --all
+   69  git log --oneline --graph --all
+   70  git remote -v
+   71  git add .
+   72  git commit -m "Versión de la rama local ahora subida a la nube"
+   73  git push -u origin factorial_recursivo 
+   74  git status
+   75  git add .
+   76  git commit -m "Versión F4 que añade println proceso completado al final del main de la clase Factorial"
+   77  git push 
+   78  clear
+   79  git switch main 
+   80  git merge factorial_recursivo 
+   81  git status
+   82  git push
+   83  git log --oneline
+   84  git revert 53d8448
+   85  git log --oneline --graph --all
+   86  git log --oneline --graph --all
+   87  git push 
+   88  git status
+   89  git add .
+   90  git commit -m "Subida de la carpeta con las capturas de verificación de la práctica"
+   91  git push 
+   92  history > DAM2526_GBJ_Factorial.txt
